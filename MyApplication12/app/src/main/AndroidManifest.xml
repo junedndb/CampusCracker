@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication_12">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".AptiPdf4"
+            android:parentActivityName=".AptiDashBoard"></activity>
+        <activity
+            android:name=".Profile"
+            android:theme="@style/Action_baar"
+            android:parentActivityName=".About" />
+        <activity
+            android:name=".About"
+            android:parentActivityName=".MainDashboard" />
+        <activity
+            android:name=".Que30"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que29"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que28"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que27"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que26"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que25"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que24"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que23"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que22"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que21"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que20"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que19"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que18"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que17"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que16"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que15"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que14"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que13"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que12"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que11"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que10"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que9"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que8"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que7"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que6"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que5"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que4"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que3"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que2"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".Que1"
+            android:parentActivityName=".QuestionsInterviewList" />
+        <activity
+            android:name=".QuestionsInterviewList"
+            android:parentActivityName=".Questions" />
+        <activity
+            android:name=".AptiPdf3"
+            android:parentActivityName=".AptiDashBoard" />
+        <activity
+            android:name=".AptiPdf2"
+            android:parentActivityName=".AptiDashBoard" />
+        <activity
+            android:name=".AptiPdf1"
+            android:parentActivityName=".AptiDashBoard" />
+        <activity
+            android:name=".AptiDashBoard"
+            android:parentActivityName=".MainDashboard" />
+        <activity
+            android:name=".CodePdf2"
+            android:parentActivityName=".CodeDahBoard" />
+        <activity
+            android:name=".CodePdf1"
+            android:parentActivityName=".CodeDahBoard" />
+        <activity
+            android:name=".CodeDahBoard"
+            android:parentActivityName=".MainDashboard" />
+        <activity android:name=".Questions" />
+        <activity
+            android:name=".Other"
+            android:parentActivityName=".MainDashboard" />
+        <activity android:name=".MainDashboard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

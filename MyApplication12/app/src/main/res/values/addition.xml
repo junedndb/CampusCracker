@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title2">Addition</string>
+    <string name="progaram2">void main()\n
+{\n\n
+
+   int a, b, c;
+
+ \n\n  printf("Enter two numbers to add\\n");
+
+ \n\n  scanf(\"\%d\%d\"\,\&amp;a\, \&amp;b)\;
+
+\n\n   c \= a \+ b\;
+
+ \n\n  printf(\"Sum of the numbers \= \%d\\n\"\,c\)\;
+
+\n\n}</string>
+    <string name="OutputAddition">Enter two numbers to add\n
+    2\n3 \n Sum of the numbers\=5</string>
+
+</resources>

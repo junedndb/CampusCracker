@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CampusCracker</string>
+    <string name="title">Developed By Juned Shaikh</string>
+    <string name="titleHello">Hello World</string>
+    <string name="progaram">void main()\n
+{\n
+   printf(\"Hello, World\!\")\;\n
+}</string>
+    <string name="output">Hello World</string>
+</resources>

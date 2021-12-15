@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Pdf">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="15dip"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:gravity="left" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffccff"/>
+
+</LinearLayout>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="codeTitile1">1.  Fibonacci Series up to n number of terms</string>
+    <string name="code1">\n\#include &lt;stdio\.h\&gt;"
+\n\n\#include&lt;stdlib\.h&gt;
+
+\n\nint main()
+\{
+ \n\n   int i,n,nextTerm,t1=0,t2=1;
+   \n\n printf("enter number of terms");
+    \n\nscanf(\"\%d\",&amp;n)\;
+
+    \n\nprintf("Fibonacci series");
+    \n\nfor(i=0;i&lt;=n;i++)
+    \n\n{
+      \n\nprintf("%d,",t1);
+      \n\nnextTerm=t1+t2;
+      \n\nt1=t2;
+      \n\nt2=nextTerm;
+
+    \n\n}
+    \n\nreturn 0;
+    \n\n}
+</string>
+
+    <string name="codeTitile2">2. Fibonacci Sequence Up to a Certain Number</string>
+    <string name="code2">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+    \n\nint t1 = 0, t2 = 1, nextTerm = 0, n;
+
+    \n\nprintf("Enter a positive number: ");
+    \n\nscanf("%d", &amp;n);
+
+    \n\n// displays the first two terms which is always 0 and 1
+    \n\nprintf("Fibonacci Series: \%d, \%d, ", t1, t2);
+
+    \n\nnextTerm = t1 + t2;
+
+    \n\nwhile(nextTerm &lt;= n)
+    \n\n{
+        \n\nprintf("\%d, ",nextTerm);
+        \n\nt1 = t2;
+        \n\nt2 = nextTerm;
+        \n\nnextTerm = t1 + t2;
+    \n\n}
+
+    \n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile3">3.Fibonacci Sequence starting from 100 </string>
+    <string name="code3">\n\n#include &lt;stdio.h&gt;
+\n\n#include&lt;stdlib.h&gt;
+
+\n\nint main()
+\n\n{
+\n\nint n,nextTerm=100,t1=0,t2=99;
+\n\nprintf("enter a number");
+\n\nscanf("%d",&amp;n);
+
+\n\nprintf("Fibonacci series");
+
+\n\nwhile(nextTerm&lt;=n)
+\n\n{
+    \n\nprintf("%d,",nextTerm);
+    \n\nt1=t2;
+    \n\nt2=nextTerm;
+    \n\nnextTerm=t1+t2;
+\n\n}
+\n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile4">4.Leap Year</string>
+    <string name="code4">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+    \n\nint year;
+
+  \n\nprintf("Enter a year: ");
+    \n\nscanf("\%d",&amp;year);
+
+    \n\nif(year\%4 == 0)
+    \n\n{
+        \n\nif( year\%100 == 0)
+        \n\n{
+            \n\n// year is divisible by 400, hence the year is a leap year
+            \n\nif ( year\%400 == 0)
+                \n\nprintf("\%d is a leap year.", year);
+            \n\nelse
+                \n\nprintf("\%d is not a leap year.", year);
+        \n\n}
+        \n\nelse
+            \n\nprintf("\%d is a leap year.", year );
+    \n\n}
+    \n\nelse
+        \n\nprintf("\%d is not a leap year.", year);
+
+    \n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile5">5.Armstrong number for 3 digits</string>
+    <string name="code5">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+    \n\nint number, originalNumber, remainder, result = 0;
+
+    \n\nprintf("Enter a three digit integer: ");
+    \n\nscanf("\%d", &amp;number);
+
+   \n\noriginalNumber = number;
+
+    \n\nwhile (originalNumber != 0)
+    \n\n{
+        \n\nremainder = originalNumber%10;
+        \n\nresult =result+( remainder*remainder*remainder);
+        \n\noriginalNumber = originalNumber/10;
+    \n\n}
+
+    \n\nif(result == number)
+        \n\nprintf("%d is an Armstrong number.",number);
+    \n\nelse
+        \n\nprintf("%d is not an Armstrong number.",number);
+
+    \n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile6">6.Program to convert binary number to decimal</string>
+    <string name="code6">\n\n#include &lt;stdio.h&gt;
+\n\n#include &lt;math.h&gt;
+\n\nint convertBinaryToDecimal(long long n);
+
+\n\nint main()
+\n\n{
+    \n\nlong long n;
+    \n\nprintf("Enter a binary number: ");
+    \n\nscanf("\%lld", &amp;n);
+    \n\nprintf("\%lld in binary = \%d in decimal", n, convertBinaryToDecimal(n));
+    \n\nreturn 0;
+\n\n}
+
+\n\nint convertBinaryToDecimal(long long n)
+\n\n{
+    \n\nint decimalNumber = 0, i = 0, remainder;
+    \n\nwhile (n!=0)
+    \n\n{
+        \n\nremainder = n%10;
+        \n\n n /= 10;
+        \n\ndecimalNumber += remainder*pow(2,i);
+        \n\n\+\+i;
+    \n\n}
+    \n\nreturn decimalNumber;
+\n\n}
+</string>
+
+    <string name="codeTitile7">7.Program to convert decimal number to binary</string>
+    <string name="code7">\n\n#include &lt;stdio.h&gt;
+\n\n#include &lt;math.h&gt;
+\n\nlong long convertDecimalToBinary(int n);
+
+\n\nint main()
+\n\n{
+    \n\nint n;
+    \n\nprintf("Enter a decimal number: ");
+    \n\nscanf("%d", &amp;n);
+    \n\nprintf("\%d in decimal = \%lld in binary", n, convertDecimalToBinary(n));
+    \n\nreturn 0;
+\n\n}
+
+\n\nlong long convertDecimalToBinary(int n)
+\n\n{
+    \n\nlong long binaryNumber = 0;
+    \n\nint remainder, i = 1, step = 1;
+
+    \n\nwhile (n\!=0)
+    \n\n{
+        \n\nremainder = n\%2;
+        \n\nprintf("Step \%d: \%d/2, Remainder = \%d, Quotient = \%d\n", step\+\+, n, remainder, n/2);
+        \n\nn /= 2;
+        \n\nbinaryNumber += remainder*i;
+        i \*= 10;
+    \n\n}
+    \n\nreturn binaryNumber;
+\n\n}
+</string>
+
+    <string name="codeTitile8">8.Program to Check Prime Number</string>
+    <string name="code8">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+    \n\nint n, i, flag = 0;
+
+    \n\nprintf("Enter a positive integer: ");
+    \n\nscanf("\%d",&amp;n);
+
+    for(i=2; i&lt;=n/2; ++i)
+    \n\n{
+        \n\n// condition for nonprime number
+        \n\nif(n\%i==0)
+        \n\n{
+        \n\nflag=1;
+            \n\nbreak;
+        \n\n}
+    \n\n}
+
+    \n\nif (flag==0)
+        \n\nprintf("\%d is a prime number.",n);
+    \n\nelse
+        \n\nprintf("%d is not a prime number.",n);
+
+    \n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile9">9.Perfect Number   [eg-6 :-  factors of 6 are 1,2,3,6 and addition is 12 then 12/2 is 6 then the number is perfect number]</string>
+    <string name="code9">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+\n\nint n,i,sum=0;
+\n\nprintf("enter number");
+\n\nscanf("%d",&amp;n);
+
+\n\nfor(i=1;i&lt;=n;i++)
+\n\n{
+    \n\nif(n\%i==0)
+    \n\n{
+        \n\nsum=sum+i;
+    \n\n}
+
+    \n\n}
+
+\n\nsum=sum/2;
+\n\nif(sum==n)
+\n\n{
+
+    \n\nprintf("perfect number",n);
+
+\n\n}
+\n\nelse
+\n\n\{
+
+    \n\nprintf("not perfect number",n);
+\n\n}
+\n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile10">10.Factorial of number</string>
+    <string name="code10">\n\n#include &lt;stdio.h&gt;
+\n\nint main()
+\n\n{
+    \n\nint n,i,fact=1;
+
+    \n\nfor(i=1;i&lt;=n;i++)
+    \n\n{
+       \n\nfact=fact*i;
+    \n\n}
+    \n\nprintf("factorial of number is \%d",fact);
+
+    \n\nreturn 0;
+\n\n}
+</string>
+
+    <string name="codeTitile11">11.Strong Number  [eg-145:- the addition of factorial of each number is the number itself]</string>
+    <string name="code11">\n\n#include &lt;stdio.h&gt;
+
+\n\nint main() {
+    \n\nint n , result=0,temp=0;
+    \n\nscanf("\%d",&amp;n);
+    \n\nint number=n;
+
+
+    \n\nwhile(n\!=0){
+        \n\ntemp = n\%10;
+        \n\nresult = result + fact(temp);
+        \n\nn=n/10;
+    \n\n}
+
+
+    \n\nif(result==number){
+        \n\nprintf("Strong Number");
+    \n\n}
+    \n\nelse{
+        \n\nprintf("Not a strong number");
+    \n\n}
+	\n\nreturn 0;
+\n\n}
+
+\n\nint fact(int n){
+    \n\nint fact=1;
+    \n\nfor(int i=1;i&lt;=n;i++){
+        \n\nfact = fact*i;
+    \n\n}
+    \n\nreturn fact;
+\n\n}
+</string>
+</resources>
